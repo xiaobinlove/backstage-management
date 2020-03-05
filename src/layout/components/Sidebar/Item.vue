@@ -18,6 +18,9 @@ export default {
 
     if (icon) {
       vnodes.push(<svg-icon icon-class={icon}/>)
+    } else {
+      // 站位元素
+      vnodes.push(<div class="placehold"></div>)
     }
 
     if (title) {
@@ -27,3 +30,10 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+ .placehold {
+   display: inline-block;
+   width: 10px;
+ }
+</style>
